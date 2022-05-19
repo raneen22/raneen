@@ -1,8 +1,8 @@
 <?php
-$servername = "127.0.0.1"; // localhost
-$username = "user";
+$servername = "localhost"; // localhost
+$username = "root";
 $password = "";
-$database = "friendbook";
+$database = "friendsbook";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
@@ -10,6 +10,6 @@ if(!$conn){
     die("Can't connect to database " . mysqli_connect_error());
 }
 
-echo "Connected to database server successfully </br>";
+// echo "Connected to database server successfully </br>";
 
 ?>
