@@ -19,9 +19,13 @@ require 'dbconnect.php';
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-
+    <style>
+p {
+  color: black ;
+  text-indent: 30px;
+}
+</style>
 </head>
-
 
 
 <body>
@@ -33,10 +37,8 @@ require 'dbconnect.php';
 
       <table class="tablewrapper">
 
-         <tr>
-            <td class="row1">Email or Phone</td>
-            <td class="row1">Password</td>
-         </tr>
+         <tr> 
+       
 
 
          <tr>
@@ -47,17 +49,9 @@ require 'dbconnect.php';
             <td><input  type="password" name="password" class="inputtext"   id="userPassword" name="user_password"  placeholder="Enter your  password" required>
 
             </td>
-            <div class="mt-4">
-                                <div class="d-flex justify-content-center mt-3 login_container">
-                                <input type="submit" class="btn" value="Login">
-                                </div>
-                                <div class="d-flex justify-content-center links">
-                                <a href="submit.php" class="form_link">Sign Up</a>
-                                </div>
-                                <div><?php if(isset($_GET['error'])){echo "<div class='alert alert-danger' role='alert'> erroe  </div>";}?> </div>
-                            </div>
+            
          </tr>
-      
+     
          <tr>
             
             <td>
@@ -109,6 +103,15 @@ require 'dbconnect.php';
       </div>
    
 </div>
+<div class="mt-4">
+                                <div class="d-flex justify-content-center mt-3 login_container">
+                                <input type="submit" class="btn" value="Login">
+                                </div>
+                                <div class="d-flex justify-content-center links">
+                                <a href="registerform.php" class="form_link">Sign Up</a>
+                                </div>
+                                <div><?php if(isset($_GET['error'])){echo "<div class='alert alert-danger' role='alert'> erroe  </div>";}?> </div>
+                            </div>
 </body>
 </html>
 <?php 
